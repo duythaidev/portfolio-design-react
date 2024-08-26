@@ -1,7 +1,8 @@
 .navBar{
     position: absolute;
-    right: 10%;
-    top: 10%;
+    right: 0;
+    // top: 10%;
+    font-size: 1rem;
     ul {
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
@@ -15,9 +16,10 @@
       
       li {
         float: left;
+        margin: 0 20px;
       }
       
-      li a {
+      li * {
         display: block;
         color: white;
         text-align: center;
@@ -25,8 +27,8 @@
         text-decoration: none;
       }
       
-      li a:hover:not(.active) {
-        background-color: #111;
+      li *:hover:not(.active) {
+        background-color: #1e1e1e;
       }
       
       .active {

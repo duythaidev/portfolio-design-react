@@ -1,14 +1,14 @@
 import logo from '../assets/logo.svg';
 import './App.scss';
-import About from '../component/About/About'
+import Main from '../component/Main/Main'
 import Profile from '../component/Profile/Profile';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Profile></Profile>
-        <About></About>
-
+        <Main></Main>
       </header>
     </div>
   );
