@@ -48,8 +48,7 @@ class Profile extends React.Component {
                 <div className="job">
                     <p>Web dev</p>
                 </div>
-                <div className="br-line">
-                </div>
+                <div className="br-line"></div>
                 {contact && contact.length > 0 &&
                     contact.map((e, i) => {
                         return (
@@ -57,7 +56,7 @@ class Profile extends React.Component {
                         )
                     })
                 }
-                <div className="icons"></div>
+                <div className="icons">icons</div>
             </aside>
         )
     }

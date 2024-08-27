@@ -26,12 +26,12 @@
         padding: 14px 16px;
         text-decoration: none;
       }
-      
+      .active {
+        color: #ffd700;
+      }
       li *:hover:not(.active) {
         background-color: #1e1e1e;
       }
       
-      .active {
-        color: #ffd700;
-      }
+
 }

@@ -1,0 +1,43 @@
+.about-card {
+    flex            : 1 1 calc(50% - 20px);
+    background-color: #222224;
+    box-shadow      : 4px 4px 8px rgba(9, 9, 9, 0.5), -4px -4px 8px rgba(63, 63, 63, 0.3);
+    align-items     : center;
+    border-radius   : 15px;
+    height          : 6rem;
+
+    .about-card-content {
+        display: flex;
+        .icon-container {
+            padding         : 1.5rem 1rem;
+            margin-left     : 2rem;
+            margin-right    : 1rem;
+            align-items     : center;
+            justify-content : center;
+            height          : 30px;
+            background-color: #222;
+            border-radius   : 5px;
+            overflow        : hidden;
+            width           : 2rem;
+
+            svg {
+                font-size: 2rem;
+                color    : gold;
+            }
+
+        }
+
+        .about-card-text {
+            font-size : .75rem;
+            text-align: left;
+
+            .title {
+                text-transform: capitalize;
+            }
+
+            .text {
+                color: #aaa;
+            }
+        }
+    }
+}

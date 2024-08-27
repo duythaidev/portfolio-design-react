@@ -10,19 +10,19 @@ class NavBar extends React.Component {
             <div className="navBar">
                 <ul>
                     <li>
-                        <NavLink to="/" exact activeClassName="selected">About</NavLink>
+                        <NavLink to="/" exact='true' activeclassname="active">About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Resume" exact activeClassName="selected">Resume</NavLink>
+                        <NavLink to="/Resume" exact='true' activeclassname="active">Resume</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Portfolio" exact activeClassName="selected">Portfolio</NavLink>
+                        <NavLink to="/Portfolio" exact='true' activeclassname="active">Portfolio</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Blog" exact activeClassName="selected">Blog</NavLink>
+                        <NavLink to="/Blog" exact='true' activeclassname="active">Blog</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Contact" exact activeClassName="selected">Contact</NavLink>
+                        <NavLink to="/Contact" exact='true' activeclassname="active">Contact</NavLink>
                     </li>
 
 

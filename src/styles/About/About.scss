@@ -1,3 +1,32 @@
+$gr:#383838;
+
 .about-container{
-    padding-top: 10px;
+    padding: 2rem;
+
+    .about-title{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .br-line{
+        width: 5%;
+        border: 3px solid #ffd700;
+        margin: 20px 0;
+        border-radius: 20px;
+    }
+    .about-text{
+        color: #d3d3d3;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }   
+    h2{
+        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    .about-card-container {
+        display           : flex;
+        flex-wrap         : wrap;
+        gap               : 2rem;
+    }    
 }
