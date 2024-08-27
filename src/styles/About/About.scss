@@ -2,7 +2,7 @@ $gr:#383838;
 
 .about-container{
     padding: 2rem;
-
+    overflow-x: hidden;
     .about-title{
         font-size: 2rem;
         font-weight: 500;
@@ -23,6 +23,9 @@ $gr:#383838;
         font-size: 1.5rem;
         font-weight: 500;
         margin-bottom: 2rem;
+    }
+    .testimonials-heading{
+        margin-bottom: 1rem;
     }
     .about-card-container {
         display           : flex;

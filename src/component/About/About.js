@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/About/About.scss'
 import AboutCard from './AboutCard'
 import Testimonials from './Testimonials'
+import Clients from './Clients'
 class About extends React.Component {
     state = {
         doingText: [
@@ -53,7 +54,7 @@ class About extends React.Component {
                         })}
                     </div>
                 }
-                <h2>
+                <h2 className='testimonials-heading'>
                     Testimonials
                 </h2>
                 <Testimonials></Testimonials>
