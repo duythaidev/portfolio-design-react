@@ -45,4 +45,11 @@ $gr:#383838;
         border-top: 1px solid $gr;
         margin: 20px 0;
     }   
+    .icons{
+        margin-bottom: 2rem;
+        svg{
+            margin: 0 5px;
+            font-size: 1rem;
+        }
+    }
 }

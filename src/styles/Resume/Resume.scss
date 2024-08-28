@@ -1,0 +1,193 @@
+$gr:#222224;
+
+
+
+.resume-container {
+    padding   : 2rem;
+    overflow-x: hidden;
+    animation : appear 0.5s ease;
+    transition: opacity 0.5s;
+
+    @keyframes appear {
+        0% {
+            opacity: 0.2;
+    
+        }
+    
+        100% {
+            opacity: 1;
+    
+        }
+    }
+    .heading {
+        margin-top   : 1.5rem;
+        font-size    : 1.75rem;
+        font-weight  : 500;
+        margin-bottom: 1rem;
+    }
+
+    .page-title {
+        font-size  : 2rem;
+        font-weight: 500;
+    }
+
+    .br-line {
+        width        : 5%;
+        border       : 3px solid #ffd700;
+        margin       : 20px 0;
+        border-radius: 20px;
+        animation: brline 0.5s ease;
+    }
+
+    @keyframes brline {
+        0% {
+            width: 0%;
+    
+        }
+    
+        100% {
+            width: 5%;
+    
+        }
+    }
+    .time-line-box {
+        display: flex;
+
+        .vertical-line {
+            > svg {
+                margin-bottom: 1.5rem;
+                padding      : 1rem;
+                background   : #222;
+                border-radius: 10px;
+                box-shadow   : -4px -4px 5px rgba(90, 90, 90, 0.15), 4px 4px 5px rgba(0, 0, 0, 0.15);
+            }
+
+            >.line-with-dots {
+                display       : flex;
+                flex-direction: column;
+                align-items   : center;
+                height        : 235px;
+                /* Adjust the height as needed */
+                margin        : 20px auto;
+                position      : relative;
+
+                .line {
+                    width: 1px;
+
+                    height          : 100%;
+                    background-color: rgb(247, 247, 247);
+                    position        : absolute;
+                }
+
+                .dot {
+                    z-index         : 1;
+                    width           : 9px;
+                    /* Adjust the size of the dot */
+                    height          : 9px;
+                    /* Adjust the size of the dot */
+                    background-color: gold;
+                    box-shadow      : 0px 0px 10px gold;
+                    border-radius   : 50%;
+                    position        : absolute;
+                }
+
+                .dot:nth-child(1) {
+                    top: 0;
+                }
+
+                .dot:nth-child(2) {
+                    top      : 50%;
+                    transform: translateY(-50%);
+
+                }
+
+                .dot:nth-child(3) {
+                    bottom: 0;
+                }
+
+            }
+
+        }
+
+
+        .time-line-content {
+            margin-left: 1rem;
+
+            h2 {
+                font-size    : 1.5rem;
+                font-weight  : 500;
+                margin-bottom: 2rem;
+                line-height  : 3.5rem;
+            }
+
+            .time-line {
+                margin-bottom: 1.5rem;
+
+                h3 {
+                    font-size    : 1.05rem;
+                    margin-bottom: .5rem;
+                    font-weight  : 500;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                .years {
+                    color: hsla(51, 100%, 50%, 0.7);
+                }
+
+                .time-line-text {
+                    color: #a1a1a1;
+                }
+            }
+        }
+    }
+
+    .skills {
+        background   : $gr;
+        box-shadow   : -2px -4px 5px rgba(90, 90, 90, 0.15), 4px 4px 5px rgba(0, 0, 0, 0.15);
+        padding      : 2rem;
+        border-radius: 15px;
+
+
+
+        p {
+            font-size    : 1rem;
+            margin-bottom: .5rem;
+
+            span {
+                color: rgb(169, 169, 169);
+            }
+        }
+
+        .container {
+            width           : 100%;
+            background-color: #333;
+            /* Light grey background for contrast */
+            height          : 8px;
+            /* Adjust the height of the bar */
+            border-radius   : 10px;
+            /* Optional     : makes the bar rounded */
+            overflow        : hidden;
+            margin-bottom   : 20px;
+            /* Add some margin around the bar */
+
+            .bar-80 {
+                border-radius   : 10px;
+                /* Optional     : makes the bar rounded */
+                width           : 80%;
+                height          : 100%;
+                background-color: gold;
+                /* Gold color for the bar */
+            }
+
+            .bar-50 {
+                width           : 50%;
+                height          : 100%;
+                background-color: gold;
+                /* Gold color for the bar */
+            }
+        }
+    }
+}

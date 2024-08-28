@@ -5,6 +5,7 @@ import Testimonials from './Testimonials'
 import Clients from './Clients'
 class About extends React.Component {
     state = {
+        opacity: 0.1,
         doingText: [
             {
                 id: 1,
@@ -32,12 +33,17 @@ class About extends React.Component {
             }
         ]
     }
+    // async componentDidMount() {
+    //     this.setState({ opacity: 0.1 })
+    //     await new Promise(resolve => setTimeout(resolve, 0));
+    //     this.setState({ opacity: 1 })
+    // }
     render() {
         const { doingText } = this.state
 
         return (
             <div className="about-container">
-                <h1 className='about-title'>
+                <h1 className='page-title'>
                     About Me
                 </h1>
                 <div className="br-line"></div>
@@ -58,6 +64,11 @@ class About extends React.Component {
                     Testimonials
                 </h2>
                 <Testimonials></Testimonials>
+                <h2 className='testimonials-heading'>
+                    Clients
+                </h2>
+
+                <Clients></Clients>
             </div>
         )
     }

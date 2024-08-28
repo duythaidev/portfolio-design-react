@@ -2,7 +2,7 @@ import React from 'react'
 import NavBar from './NavBar'
 import '../../styles/Main/Main.scss'
 import About from '../About/About'
-import Profile from '../Profile/Profile'
+import Resume from '../Resume/Resume'
 // import {
 //     BrowserRouter as Router,
 //     Switch,
@@ -19,6 +19,8 @@ class Main extends React.Component {
                     <NavBar></NavBar>
                     <Routes>
                         <Route path="/" element={<About />} />
+                        <Route path="/Resume" element={<Resume />} />
+
                     </Routes>
                 </Router>
             </main>

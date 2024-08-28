@@ -1,9 +1,52 @@
 $gr:#383838;
 
+::-webkit-scrollbar {
+  width: 2px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #242424; 
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  box-shadow: 0px 0px 4px #ffd700;
+  background: #ffd700; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d1b200; 
+}
+::-webkit-scrollbar-track-piece:end {
+  margin-right: 50px; 
+}
+
+::-webkit-scrollbar-track-piece:start {
+  margin-left: 50px;
+}
 .about-container{
     padding: 2rem;
     overflow-x: hidden;
-    .about-title{
+    animation : appear 0.5s ease;
+    transition: opacity 0.5s;
+
+    @keyframes appear {
+        0% {
+            opacity: 0.2;
+    
+        }
+    
+        100% {
+            opacity: 1;
+    
+        }
+    }
+    .page-title{
         font-size: 2rem;
         font-weight: 500;
     }
@@ -12,6 +55,19 @@ $gr:#383838;
         border: 3px solid #ffd700;
         margin: 20px 0;
         border-radius: 20px;
+        animation: brline 0.5s ease;
+    }
+
+    @keyframes brline {
+        0% {
+            width: 0%;
+    
+        }
+    
+        100% {
+            width: 5%;
+    
+        }
     }
     .about-text{
         color: #d3d3d3;
