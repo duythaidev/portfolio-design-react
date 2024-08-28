@@ -1,35 +1,6 @@
 $gr:#222224;
 
 
-::-webkit-scrollbar {
-  width: 2px;
-  height: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #242424; 
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  box-shadow: 0px 0px 4px #ffd700;
-  background: #ffd700; 
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #d1b200; 
-}
-::-webkit-scrollbar-track-piece:end {
-  margin-right: 50px; 
-}
-
-::-webkit-scrollbar-track-piece:start {
-  margin-left: 50px;
-}
 .resume-container {
     padding   : 2rem;
     overflow-x: hidden;
@@ -39,14 +10,15 @@ $gr:#222224;
     @keyframes appear {
         0% {
             opacity: 0.2;
-    
+
         }
-    
+
         100% {
             opacity: 1;
-    
+
         }
     }
+
     .heading {
         margin-top   : 1.5rem;
         font-size    : 1.75rem;
@@ -64,25 +36,26 @@ $gr:#222224;
         border       : 3px solid #ffd700;
         margin       : 20px 0;
         border-radius: 20px;
-        animation: brline 0.5s ease;
+        animation    : brline 0.5s ease;
     }
 
     @keyframes brline {
         0% {
             width: 0%;
-    
+
         }
-    
+
         100% {
             width: 5%;
-    
+
         }
     }
+
     .time-line-box {
         display: flex;
 
         .vertical-line {
-            > svg {
+            >svg {
                 margin-bottom: 1.5rem;
                 padding      : 1rem;
                 background   : #222;
@@ -100,11 +73,22 @@ $gr:#222224;
                 position      : relative;
 
                 .line {
-                    width: 1px;
-
+                    width           : 1px;
                     height          : 100%;
                     background-color: rgb(247, 247, 247);
                     position        : absolute;
+                    animation       : lineHeight 0.5s ease;
+                    transition      : height 0.5s ease;
+                }
+
+                @keyframes lineHeight {
+                    0% {
+                        height: 0%;
+                    }
+
+                    100% {
+                        height: 100%;
+                    }
                 }
 
                 .dot {
@@ -124,15 +108,37 @@ $gr:#222224;
                 }
 
                 .dot:nth-child(2) {
-                    top      : 50%;
-                    transform: translateY(-50%);
-
+                    top       : 50%;
+                    transform : translateY(-50%);
+                    animation : dot2 0.5s ease;
+                    transition: top 0.5s ease;
                 }
 
                 .dot:nth-child(3) {
-                    bottom: 0;
+                    bottom    : 0;
+                    animation : dot3 0.5s ease;
+                    transition: all 0.5s ease;
                 }
 
+                @keyframes dot2 {
+                    0% {
+                        top: 0%;
+                    }
+
+                    100% {
+                        top: 50%;
+                    }
+                }
+
+                @keyframes dot3 {
+                    0% {
+                        bottom: 100%;
+                    }
+
+                    100% {
+                        bottom: 0;
+                    }
+                }
             }
 
         }
@@ -150,7 +156,7 @@ $gr:#222224;
 
             .time-line {
                 margin-bottom: 1.5rem;
-
+                opacity: 1;
                 h3 {
                     font-size    : 1.05rem;
                     margin-bottom: .5rem;
@@ -167,6 +173,27 @@ $gr:#222224;
 
                 .time-line-text {
                     color: #a1a1a1;
+                }
+            }
+            :nth-child(2){
+                animation: fadeIn 0.5s forwards;
+            }
+            :nth-child(3){
+                animation: fadeIn 1s forwards;
+            }
+            :nth-child(4){
+                animation: fadeIn 1.5s forwards;
+            }
+            
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px); /* Optional: slight move up */
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
                 }
             }
         }
