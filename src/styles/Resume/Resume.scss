@@ -2,8 +2,8 @@ $gr:#222224;
 
 
 .resume-container {
+    overflow-x: clip !important;
     padding   : 2rem;
-    overflow-x: hidden;
     animation : appear 0.5s ease;
     transition: opacity 0.5s;
 
@@ -156,7 +156,8 @@ $gr:#222224;
 
             .time-line {
                 margin-bottom: 1.5rem;
-                opacity: 1;
+                opacity      : 1;
+
                 h3 {
                     font-size    : 1.05rem;
                     margin-bottom: .5rem;
@@ -175,24 +176,40 @@ $gr:#222224;
                     color: #a1a1a1;
                 }
             }
-            :nth-child(2){
-                animation: fadeIn 0.5s forwards;
+
+            :nth-child(2) {
+                // animation: fadeIn 0.5s forwards;
+                animation         : fadeIn linear;
+                animation-timeline: view();
+                animation-range   : entry 0% cover 50%;
             }
-            :nth-child(3){
-                animation: fadeIn 1s forwards;
+
+
+
+            :nth-child(3) {
+                // animation         : fadeIn 1s forwards;
+                animation         : fadeIn linear;
+                animation-timeline: view();
+                animation-range   : entry 0% cover 50%;
             }
-            :nth-child(4){
-                animation: fadeIn 1.5s forwards;
+
+            :nth-child(4) {
+                // animation         : fadeIn 1.5s forwards;
+                animation         : fadeIn linear;
+                animation-timeline: view();
+                animation-range   : entry 0% cover 50%;
             }
-            
+
 
             @keyframes fadeIn {
                 from {
-                    opacity: 0;
-                    transform: translateY(20px); /* Optional: slight move up */
+                    opacity    : 0;
+                    transform  : translateY(20px);
+                    /* Optional: slight move up */
                 }
+
                 to {
-                    opacity: 1;
+                    opacity  : 1;
                     transform: translateY(0);
                 }
             }
@@ -206,7 +223,6 @@ $gr:#222224;
         border-radius: 15px;
 
 
-
         p {
             font-size    : 1rem;
             margin-bottom: .5rem;
@@ -216,33 +232,56 @@ $gr:#222224;
             }
         }
 
+
+
         .container {
             width           : 100%;
             background-color: #333;
-            /* Light grey background for contrast */
             height          : 8px;
-            /* Adjust the height of the bar */
             border-radius   : 10px;
-            /* Optional     : makes the bar rounded */
-            overflow        : hidden;
+            overflow        : visible !important;
             margin-bottom   : 20px;
-            /* Add some margin around the bar */
 
             .bar-80 {
-                border-radius   : 10px;
-                /* Optional     : makes the bar rounded */
-                width           : 80%;
-                height          : 100%;
-                background-color: gold;
-                /* Gold color for the bar */
+                border-radius     : 10px;
+                width             : 80%;
+                height            : 100%;
+                background-color  : gold;
+                animation         : skillbar1 linear;
+                animation-timeline: view();
+                animation-range   : entry 0% cover 20%;
             }
 
             .bar-50 {
-                width           : 50%;
-                height          : 100%;
-                background-color: gold;
-                /* Gold color for the bar */
+                border-radius     : 10px;
+                width             : 50%;
+                height            : 100%;
+                background-color  : gold;
+                animation         : skillbar2 linear;
+                animation-timeline: view();
+                animation-range   : entry 0% cover 20%;
+            }
+
+            @keyframes skillbar1 {
+                from {
+                    width: 0%;
+                }
+
+                to {
+                    width: 80%;
+                }
+            }
+
+            @keyframes skillbar2 {
+                from {
+                    width: 0%;
+                }
+
+                to {
+                    width: 50%;
+                }
             }
         }
+
     }
 }

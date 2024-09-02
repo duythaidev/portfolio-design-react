@@ -123,9 +123,13 @@ class Resume extends React.Component {
                     My Skills
                 </h2>
                 <div className="skills">
-                    <p>Web Design <span>80%</span></p>
+                    <p>ReactJS <span>80%</span></p>
                     <div className="container">
                         <div className="bar-80"></div>
+                    </div>
+                    <p>Java <span>50%</span></p>
+                    <div className="container">
+                        <div className="bar-50"></div>
                     </div>
                     <p>WordPress <span>50%</span></p>
                     <div className="container">

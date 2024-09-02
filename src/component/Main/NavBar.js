@@ -16,7 +16,7 @@ class NavBar extends React.Component {
                         <NavLink to="/Resume" exact='true' activeclassname="active">Resume</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/Portfolio" exact='true' activeclassname="active">Portfolio</NavLink>
+                        <NavLink to="/Portfolio/All" exact='true' activeclassname="active">Portfolio</NavLink>
                     </li>
                     <li>
                         <NavLink to="/Blog" exact='true' activeclassname="active">Blog</NavLink>

@@ -1,0 +1,33 @@
+.portfolio-navBar{
+
+    font-size: 1rem;
+    ul {
+        width:fit-content;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #282828;
+      }
+      
+      li {
+        float: left;
+        margin: 0 20px;
+      }
+      
+      li * {
+        transition: background-color 0.5s ease;
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+      }
+      .active {
+        color: #ffd700;
+      }
+      li *:hover:not(.active) {
+        background-color: #1e1e1e;
+      }
+      
+
+}
