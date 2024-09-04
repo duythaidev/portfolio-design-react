@@ -7,7 +7,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        background-color: #282828;
+        // background-color: #282828;
       }
       
       li {
@@ -16,12 +16,16 @@
       }
       
       li * {
-        transition: background-color 0.5s ease;
+        transition: color 0.5s ease;
         display: block;
         color: white;
         text-align: center;
         text-decoration: none;
       }
+      li *:hover{
+        color: #ffd700;
+      }
+
       .active {
         color: #ffd700;
       }

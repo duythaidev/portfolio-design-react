@@ -1,0 +1,17 @@
+.portfolio-body-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: flex-start;
+    opacity        : 1;
+    animation      : p-appear 0.5s forwards;
+}
+
+@keyframes p-appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

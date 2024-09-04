@@ -14,7 +14,6 @@ class Contact extends React.Component {
             <div className="contact flex">
 
                 <div className="icon-container flex">
-
                     <FontAwesomeIcon icon={iconName} />
                 </div>
                 <div className="contact-content">
