@@ -18,10 +18,10 @@ class PortfolioNavBar extends React.Component {
                                 <NavLink to="Web-design" activeclassname="active">Web design</NavLink>
                             </li>
                             <li>
-                                <NavLink to="Applications" activeclassname="active">Portfolio</NavLink>
+                                <NavLink to="Applications" activeclassname="active">Applications</NavLink>
                             </li>
                             <li>
-                                <NavLink to="Web-development" activeclassname="active">Blog</NavLink>
+                                <NavLink to="Web-development" activeclassname="active">Web development</NavLink>
                             </li>
                         </ul>
                     </div>

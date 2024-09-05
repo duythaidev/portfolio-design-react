@@ -1,11 +1,13 @@
 .about-card {
     flex            : 1 1 calc(50% - 20px);
     background-color: #222224;
-    box-shadow      : 4px 4px 8px rgba(9, 9, 9, 0.5), -4px -4px 8px rgba(63, 63, 63, 0.3);
+    box-shadow      : 4px 4px 8px rgba(9, 9, 9, 0.5), -0.5px -0.5px 1px rgba(150, 150, 150, 0.3);
     align-items     : center;
     border-radius   : 15px;
     height          : 6rem;
-    transition: all 0.5s ease;
+    transition      : all 0.5s ease;
+    // border: 1px solid hsl(0, 0, 22%);
+    border-image    : linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
 
     .about-card-content {
         display: flex;
@@ -45,7 +47,8 @@
         }
     }
 }
+
 .about-card:hover {
-    box-shadow: 4px 4px 8px rgba(255, 247, 0, 0.8), -3px -3px 6px rgba(153, 153, 153, 0.5);
-    transform : translateY(-2px) scale(1.01,1.01);
+    box-shadow: -1px -1px 1px rgba(150, 150, 150, 0.3), 2px 2px 1px #fff700;
+    transform : translateY(-2px) scale(1.01, 1.01);
 }

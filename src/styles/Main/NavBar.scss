@@ -3,6 +3,12 @@
     right: 0;
     z-index: 1;
     font-size: 1rem;
+    border-left: 1px solid hsl(0, 0, 22%);
+    border-bottom: 1px solid hsl(0, 0, 22%);
+
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
     ul {
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;

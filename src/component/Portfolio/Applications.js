@@ -2,8 +2,7 @@ import React from 'react'
 import PortfolioCard from './PortfolioCard';
 import '../../styles/Portfolio/PortfolioBody.scss'
 import myPortfolio from '../../assets/Portfolio.png'
-
-class All extends React.Component {
+class Applications extends React.Component {
     state = {
         image: [
             {
@@ -13,34 +12,7 @@ class All extends React.Component {
                 content: 'Use pure css',
                 link: 'https://x.com'
             },
-            {
-                id: 2,
-                imgsrc: myPortfolio,
-                title: 'My Portfolio',
-                content: 'Use pure css',
-                link: 'https://x.com'
-            },
-            {
-                id: 3,
-                imgsrc: myPortfolio,
-                title: 'My Portfolio',
-                content: 'Use pure css',
-                link: 'https://x.com'
-            },
-            {
-                id: 4,
-                imgsrc: myPortfolio,
-                title: 'My Portfolio',
-                content: 'Use pure css',
-                link: 'https://x.com'
-            },
-            {
-                id: 5,
-                imgsrc: myPortfolio,
-                title: 'My Portfolio',
-                content: 'Use pure css',
-                link: 'https://x.com'
-            }
+
         ]
     }
     render() {
@@ -62,4 +34,4 @@ class All extends React.Component {
         )
     }
 }
-export default All;
+export default Applications;

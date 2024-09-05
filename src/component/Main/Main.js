@@ -4,6 +4,8 @@ import '../../styles/Main/Main.scss'
 import About from '../About/About'
 import Resume from '../Resume/Resume'
 import Portfolio from '../Portfolio/Portfolio'
+import Blog from '../Blog/Blog'
+import Contact from '../Contact/Contact'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 class Main extends React.Component {
@@ -17,6 +19,8 @@ class Main extends React.Component {
                         <Route path="/" element={<About />} />
                         <Route path="/Resume" element={<Resume />} />
                         <Route path="/Portfolio/*" element={<Portfolio />} />
+                        <Route path="/Blog" element={<Blog />} />
+                        <Route path="/Contact" element={<Contact />} />
                     </Routes>
                 </Router>
             </main>
