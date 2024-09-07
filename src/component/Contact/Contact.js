@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../styles/Contact/Contact.scss'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
@@ -7,15 +9,26 @@ library.add(faPaperPlane);
 class Contact extends React.Component {
     state = {
         fullName: '',
-        email: ''
+        email: '',
+        comment: ''
     }
 
     handleOnChange = (e) => {
         const { name, value } = e.target;
         this.setState({ [name]: value });
-      };
+    };
     render() {
-        const inputValue = this.state.inputValue
+        const inputValue = this.state
+        const notify = () => {
+            toast('🦄 Send successfully!')
+            this.setState({
+                fullName: '',
+                email: '',
+                comment: ''
+            });
+            // console.log('ok')
+        }
+
         return (
             <div className='contact-container'>
                 <h1 className='page-title'>
@@ -30,17 +43,18 @@ class Contact extends React.Component {
 
                     <form id="usrform">
                         <label>
-                            <input placeholder="Full Name" name="fullName" className='input-form' type="text" onChange={(e) => this.handleOnChange(e)} value={inputValue} />
-                            <input placeholder="Email" name="email" className='input-form' type="text" onChange={(e) => this.handleOnChange(e)} value={inputValue} />
-                            <textarea placeholder="Message" className="input-form-message" name="comment" form="usrform"></textarea>
+                            <input placeholder="Full Name" name="fullName" className='input-form' type="text" onChange={(e) => this.handleOnChange(e)} value={inputValue.fullName} />
+                            <input placeholder="Email" name="email" className='input-form' type="text" onChange={(e) => this.handleOnChange(e)} value={inputValue.email} />
+                            <textarea placeholder="Message" className="input-form-message" name="comment" form="usrform" onChange={(e) => this.handleOnChange(e)} value={inputValue.comment}></textarea>
 
                         </label>
-                        <button className='input-submit'>
+                        <button onClick={notify} type='button' className='input-submit'>
                             <FontAwesomeIcon icon={faPaperPlane} />
                             <span>Send Message</span>
                         </button>
                     </form>
                 </div>
+                <ToastContainer />
             </div>
         )
     }
