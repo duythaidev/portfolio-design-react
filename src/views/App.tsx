@@ -1,7 +1,7 @@
 import logo from '../assets/logo.svg';
-import './App.scss';
 import Main from '../component/Main/Main'
 import Profile from '../component/Profile/Profile';
+import './App.scss';
 
 function App() {
   return (
