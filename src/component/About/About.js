@@ -4,6 +4,7 @@ import AboutCard from './AboutCard'
 import Testimonials from './Testimonials'
 import Clients from './Clients'
 import { connect } from 'react-redux'
+
 class About extends React.Component {
     handleOnClick = (lang) => {
         console.log(lang)
