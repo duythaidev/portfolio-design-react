@@ -1,0 +1,86 @@
+$gr:#383838;
+
+.about-container {
+    padding   : 2rem;
+    overflow-x: hidden;
+    animation : appear 0.5s ease;
+    transition: opacity 0.5s;
+
+    @keyframes appear {
+        0% {
+            opacity: 0.2;
+
+        }
+
+        100% {
+            opacity: 1;
+
+        }
+    }
+
+    .page-title {
+        font-size  : 2rem;
+        font-weight: 500;
+    }
+
+    .br-line {
+        width        : 5%;
+        border       : 3px solid #ffd700;
+        margin       : 20px 0;
+        border-radius: 20px;
+        animation    : brline 0.5s ease;
+    }
+
+    @keyframes brline {
+        0% {
+            width: 0%;
+
+        }
+
+        100% {
+            width: 5%;
+
+        }
+    }
+
+    .about-text {
+        color        : #d3d3d3;
+        font-size    : 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin-top   : 1.5rem;
+        font-size    : 1.5rem;
+        font-weight  : 500;
+        margin-bottom: 2rem;
+    }
+
+    .testimonials-heading {
+        margin-bottom: 1rem;
+    }
+
+    .about-card-container {
+        display  : flex;
+        flex-wrap: wrap;
+        gap      : 2rem;
+        transition: all 0.5s ease;
+        // :nth-child(1) {
+            animation: fadeIn 0.5s ease;
+        // }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity    : 0;
+            transform  : translateY(20px);
+            /* Optional: slight move up */
+        }
+
+        to {
+            opacity  : 1;
+            transform: translateY(0);
+        }
+    }
+
+}

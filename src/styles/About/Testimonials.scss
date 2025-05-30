@@ -1,0 +1,9 @@
+
+.testimonials-container {
+    height          : 12rem;
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll  ; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrolling */
+    width: 100%;
+}

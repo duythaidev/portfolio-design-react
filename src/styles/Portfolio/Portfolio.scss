@@ -1,0 +1,41 @@
+.portfolio-container{
+    padding   : 2rem;
+    animation : appear 0.5s ease;
+    transition: opacity 0.5s;
+
+    @keyframes appear {
+        0% {
+            opacity: 0.2;
+
+        }
+
+        100% {
+            opacity: 1;
+
+        }
+    }
+    .page-title {
+        font-size  : 2rem;
+        font-weight: 500;
+    }
+
+    .br-line {
+        width        : 5%;
+        border       : 3px solid #ffd700;
+        margin       : 20px 0;
+        border-radius: 20px;
+        animation    : brline 0.5s ease;
+    }
+
+    @keyframes brline {
+        0% {
+            width: 0%;
+
+        }
+
+        100% {
+            width: 5%;
+
+        }
+    }
+}

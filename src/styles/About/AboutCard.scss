@@ -1,0 +1,54 @@
+.about-card {
+    flex            : 1 1 calc(50% - 20px);
+    background-color: #222224;
+    box-shadow      : 4px 4px 8px rgba(9, 9, 9, 0.5), -0.5px -0.5px 1px rgba(150, 150, 150, 0.3);
+    align-items     : center;
+    border-radius   : 15px;
+    height          : 6rem;
+    transition      : all 0.5s ease;
+    // border: 1px solid hsl(0, 0, 22%);
+    border-image    : linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1;
+
+    .about-card-content {
+        display: flex;
+
+        .icon-container {
+            padding         : 1.5rem 1rem;
+            margin-left     : 2rem;
+            margin-right    : 1rem;
+            align-items     : center;
+            justify-content : center;
+            height          : 30px;
+            background-color: #222;
+            border-radius   : 5px;
+            overflow        : hidden;
+            width           : 2rem;
+
+            svg {
+                font-size: 2rem;
+                color    : gold;
+            }
+
+        }
+
+        .about-card-text {
+            font-size : .75rem;
+            text-align: left;
+
+            .title {
+                text-transform: capitalize;
+                font-size     : 1rem;
+                font-weight   : 500;
+            }
+
+            .text {
+                color: #aaa;
+            }
+        }
+    }
+}
+
+.about-card:hover {
+    box-shadow: -1px -1px 1px rgba(150, 150, 150, 0.3), 2px 2px 1px #fff700;
+    transform : translateY(-2px) scale(1.01, 1.01);
+}
