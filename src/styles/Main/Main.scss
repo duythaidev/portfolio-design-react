@@ -6,6 +6,10 @@
     background-color: #1e1e1e;
     text-align      : left;
     border: 1px solid #383838;
+    overflow-x: hidden;
+    @media (max-width: 768px) {
+        width: 100%;
+    }
     ::-webkit-scrollbar {
         width : 2px;
         height: 5px;

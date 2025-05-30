@@ -1,4 +1,3 @@
-import logo from '../assets/logo.svg';
 import Main from '../component/Main/Main'
 import Profile from '../component/Profile/Profile';
 import './App.scss';
