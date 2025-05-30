@@ -29,8 +29,6 @@ const About: React.FC<AboutProps> = ({ aboutContent, changeLanguage }) => {
 
     return (
         <div className="about-container">
-            {/* <button onClick={() => handleOnClick('en')}>EN</button>
-            <button onClick={() => handleOnClick('vi')}>VI</button> */}
 
             <h1 className='page-title'>
                 {title}
