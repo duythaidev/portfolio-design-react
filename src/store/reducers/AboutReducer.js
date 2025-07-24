@@ -1,34 +1,35 @@
 const initState = {
     title: 'About Me',
-    header: ["What I'm doing", 'Testimonials', 'Clients'],
+    header: ["What I'm doing", 'My Tech Stack'],
     testimonialsName: ['Jojo', 'Kzek', 'Jessica Chemistry'],
     testimonialsContent: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, necessitatibus saepe nobis dolorum voluptatum cum velit doloremque ut ipsum commodi vel praesentium eos quo odio laboriosam cumque iure quae? Omnis."
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, necessitatibus saepe nobis dolorum voluptatum cum velit doloremque ut ipsum commodi vel praesentium eos quo odio laboriosam cumque iure quae? Omnis.",
+        'ASDJ'
     ],
     doingText: [
         {
             id: 1,
-            iconName: 'fa-brands fa-figma',
-            title: 'Web Design',
-            text: '...@gmail.com'
+            iconName: 'fa-solid fa-laptop-code',
+            title: 'Web development',
+            text: 'Making website with ReactJS, NextJS, ExpressJS, NestJS'
         },
         {
             id: 2,
-            iconName: 'fa-solid fa-laptop-code',
-            title: 'Web development',
-            text: 'Web...'
+            iconName: 'fa-brands fa-figma',
+            title: 'Web Design',
+            text: 'Design website with Figma, make mockup, design UI/UX'
         },
         {
             id: 3,
             iconName: 'fa-solid fa-mobile-screen-button',
             title: 'Mobile Apps',
-            text: 'app...'
+            text: 'Making mobile apps with React Native, Expo, etc.'
         },
         {
             id: 4,
             iconName: 'fa-solid fa-camera',
             title: 'Photography',
-            text: 'picture...'
+            text: 'Taking photos'
         }
     ]
 }

@@ -5,45 +5,39 @@ import Contact from './Contact'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
-library.add(faFacebook, faTwitter, faInstagram);
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+library.add(faFacebook, faTwitter, faInstagram, faEnvelope);
 
 // import { faHouse } from '@awesome.me/kit-KIT_CODE/icons/classic/solid'
 
 const Profile = () => {
     const [contact] = useState([
         {
-            id: 1,
-            iconName: 'fa-solid fa-home',
-            title: 'Email',
-            text: '...@gmail.com'
-        },
-        {
             id: 2,
             title: 'Phone',
             iconName: 'fa-solid fa-phone',
-            text: '123456789'
+            text: '0985486619'
         },
         {
             id: 3,
             iconName: 'fa-solid fa-calendar',
             title: 'Birthday',
-            text: 'MM DD, YYY'
+            text: '17/09/2005'
         },
         {
             id: 4,
             iconName: 'fa-solid fa-location',
             title: 'Location',
-            text: 'VN'
+            text: 'Ha Noi'
         }
     ]);
 
     return (
         <aside className='aside-content flex-column-center'>
             <div className="img-container">
-                <img src={chadPicture} alt="" />
+                <img src={'https://avatars.githubusercontent.com/u/199640274?v=4'} alt="" />
             </div>
-            <h1>Nguyen D. Thai</h1>
+            <h1>Duy Thai</h1>
             <div className="job">
                 <p>Web developer</p>
             </div>
@@ -57,15 +51,13 @@ const Profile = () => {
                 />
             ))}
             <div className="icons">
-                <a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/">
+                <a target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/thai.nguyenduy.52643/">
                     <FontAwesomeIcon icon={'fa-brands fa-facebook'} />
                 </a>
-                <a target='_blank' rel="noopener noreferrer" href="https://www.x.com/">
-                    <FontAwesomeIcon icon={'fa-brands fa-twitter'} />
-                </a>
-                <a target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/">
-                    <FontAwesomeIcon icon={'fa-brands fa-instagram'} />
-                </a>
+
+                <a target='_blank' rel="noopener noreferrer" href="mailto:nguyenduythai17092005@gmail.com">
+                    <FontAwesomeIcon icon="fa-solid fa-envelope" />                </a>
+
             </div>
         </aside>
     )

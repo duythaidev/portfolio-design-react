@@ -13,7 +13,7 @@
     position: relative;
     right: 0;
     z-index: 1;
-    font-size: 1rem;
+    font-size: .75rem;
   }
 
   ul {
@@ -43,6 +43,11 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    li * {
+      padding: 15px 8px;
+    }
   }
 
   .active {

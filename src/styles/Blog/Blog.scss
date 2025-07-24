@@ -20,7 +20,7 @@
     }
 
     .br-line {
-        width        : 5%;
+        width        : 3rem;
         border       : 3px solid #ffd700;
         margin       : 20px 0;
         border-radius: 20px;
@@ -29,12 +29,12 @@
 
     @keyframes brline {
         0% {
-            width: 0%;
+            width: 0;
 
         }
 
         100% {
-            width: 5%;
+            width: 3rem;
 
         }
     }

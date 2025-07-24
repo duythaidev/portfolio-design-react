@@ -1,11 +1,19 @@
 .portfolio-card-container {
-    width           : 30%;
-    // height       : 50%;
-    margin          : 0 1.65%;
+    // width           : 30%;
+    // // height       : 50%;
+    // margin          : 0 1.65%;
+    // flex: 1 1 30%;
+    flex-basis: 32%;
     margin-top      : 2.5rem;
     position        : relative;
     scale: 1;
     animation       : p-appear 0.5s forwards;
+    @media (max-width: 768px) {
+        flex-basis: 48%;
+    }
+    @media (max-width: 480px) {
+        flex-basis: 100%;
+    }
     @keyframes p-appear {
         from {
             scale: 0.5;

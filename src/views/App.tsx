@@ -2,6 +2,7 @@ import Main from '../component/Main/Main'
 import Profile from '../component/Profile/Profile';
 import './App.scss';
 
+
 function App() {
   return (
     <div className="App">

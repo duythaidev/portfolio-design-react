@@ -11,7 +11,7 @@
 
     .about-card-content {
         display: flex;
-
+        align-items: center;
         .icon-container {
             padding         : 1.5rem 1rem;
             margin-left     : 2rem;
@@ -23,6 +23,9 @@
             border-radius   : 5px;
             overflow        : hidden;
             width           : 2rem;
+            @media (max-width: 768px) {
+                margin-left: .5rem;
+            }
 
             svg {
                 font-size: 2rem;

@@ -27,6 +27,7 @@ export default defineConfig({
         '.js': 'jsx',
       },
     },
+    exclude: ['js-big-decimal']
   },
   test: {
     globals: true,
