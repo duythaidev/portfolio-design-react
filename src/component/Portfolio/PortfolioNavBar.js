@@ -9,16 +9,16 @@ const PortfolioNavBar = () => {
                 <div className="portfolio-navBar">
                     <ul>
                         <li>
-                            <NavLink to="All" activeclassname="active">All</NavLink>
+                            <NavLink to="" activeclassname="active">All</NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <NavLink to="Web-design" activeclassname="active">Web design</NavLink>
+                            </li> */}
+                        <li>
+                            <NavLink to="web-development" activeclassname="active">Web development</NavLink>
                         </li>
                         <li>
-                            <NavLink to="Applications" activeclassname="active">Applications</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="Web-development" activeclassname="active">Web development</NavLink>
+                            <NavLink to="applications" activeclassname="active">Applications</NavLink>
                         </li>
                     </ul>
                 </div>

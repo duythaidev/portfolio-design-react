@@ -4,9 +4,9 @@ import chadPicture from '../../assets/Gigachad-Transparent.png'
 import Contact from './Contact'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-library.add(faFacebook, faTwitter, faInstagram, faEnvelope);
+library.add(faFacebook, faTwitter, faInstagram, faGithub, faEnvelope);
 
 // import { faHouse } from '@awesome.me/kit-KIT_CODE/icons/classic/solid'
 
@@ -55,8 +55,12 @@ const Profile = () => {
                     <FontAwesomeIcon icon={'fa-brands fa-facebook'} />
                 </a>
 
+                <a target='_blank' rel="noopener noreferrer" href="https://github.com/duythaidev">
+                    <FontAwesomeIcon icon="fa-brands fa-github" />
+                </a>
                 <a target='_blank' rel="noopener noreferrer" href="mailto:nguyenduythai17092005@gmail.com">
-                    <FontAwesomeIcon icon="fa-solid fa-envelope" />                </a>
+                    <FontAwesomeIcon icon="fa-solid fa-envelope" />
+                </a>
 
             </div>
         </aside>
