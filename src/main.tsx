@@ -1,23 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './views/App';
-import reportWebVitals from './reportWebVitals';
-import { Provider } from 'react-redux'
-// import { createStore } from 'redux'
-import { legacy_createStore as createStore } from 'redux';
-// import rootReducer from './store/reducers/rootReducer';
-import mainReducer from './store/reducers/MainReducers';
-// import rootReducer from './store/reducers/rootReducer'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./views/App";
+import reportWebVitals from "./reportWebVitals";
+import { LanguageProvider } from "./context/LanguageContext";
 
-const reduxStore = createStore(mainReducer)
-
-const root = ReactDOM.createRoot(document.getElementById('root')!);
+const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
-    <Provider store={reduxStore}>
+    <LanguageProvider>
       <App></App>
-    </Provider>
-
+    </LanguageProvider>
   </React.StrictMode>
 );
 

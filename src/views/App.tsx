@@ -1,6 +1,7 @@
 import Main from '../component/Main/Main'
 import Profile from '../component/Profile/Profile';
 import './App.scss';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
